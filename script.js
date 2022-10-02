@@ -8,18 +8,15 @@ var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var special = [" ", "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~"];
 // get backslash to work
 
-var passwordLength = 8;
-
-var lettersChoice = true;
-var lettersUpperChoice = true;
-var numbersChoice = true;
-var specialChoice =  true;
-
-console.log(special);
+var password = "";
+var useLetters;
+var useUppers;
+var useNumbers;
+var useSpecial;
 
 // functions
 
-function generateCharacter(useLetters, useUppers, useNumbers, useSpecial) {
+function generatePassword(useLetters, useUppers, useNumbers, useSpecial) {
   var set = []
   if (useLetters) set = set.concat(letters)
   if (useUppers) set = set.concat(lettersUpper)
@@ -28,36 +25,31 @@ function generateCharacter(useLetters, useUppers, useNumbers, useSpecial) {
   return set[Math.floor(Math.random() * set.length)];
 }
 
-// execution
-var password = ""
-var length = 8
-
-for(var i = 0; i < length; i++){
-  password += generateCharacter(false, true, true, true)
-}
-
-console.log(password);
-
-
-
-
-
-// testing
-// console.log(generatePassword());
-
-
-
-
-
 // Write password to the #password input
 
 
 function writePassword() {
-  var password = generatePassword();
+  var length = prompt("Please enter password length");
+  if (length === null) {
+    return;
+  }
+  if (length < 8 || length > 128) {
+    alert("Password must be between 8 and 128 characters");
+  } else { useLetters = confirm("Use lower case letters?");
+           useUppers = confirm("Use upper case letters?");
+           useNumbers = confirm("Use numbers?");
+           useSpecial = confirm("Use special characters?");
+           if (!useLetters && !useUppers && !useNumbers && !useSpecial) {
+            alert("You must choose at least one criteria!");
+            writePassword();
+           }
+  for(var i = 0; i < length; i++){
+    password += generatePassword(useLetters, useUppers, useNumbers, useSpecial)
+  } 
+  }
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
+  password = "";
 };
 
 // Add event listener to generate button
