@@ -41,7 +41,7 @@ function writePassword() {
            useSpecial = confirm("Use special characters?");
            if (!useLetters && !useUppers && !useNumbers && !useSpecial) {
             alert("You must choose at least one criteria!");
-            writePassword();
+            return;
            }
   for(var i = 0; i < length; i++){
     password += generatePassword(useLetters, useUppers, useNumbers, useSpecial)
