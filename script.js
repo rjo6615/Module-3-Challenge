@@ -80,7 +80,7 @@ function writePassword() {
     }
   }
   // Generates the password for user
-  for(var i = 0; i < length; i++){
+  for(var i = 0; i <= length; i++){
     if(charTypesInPassword[i] == undefined) {
       password += generatePassword(useLetters, useUppers, useNumbers, useSpecial)
     } else if(charTypesInPassword[i] == 0) {
