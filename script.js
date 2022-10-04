@@ -6,7 +6,6 @@ var lettersUpper = letters.map(element => {
 });
 var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var special = [" ", "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~"];
-// get backslash to work
 
 var password = "";
 var useLetters;

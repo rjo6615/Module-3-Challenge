@@ -2,11 +2,8 @@
 
 ## Description
 
-While learning web development it is important to put together a portfolio so
-I put together this project to display my work and information to possible employers.
-This project allowed me to display my skills in building a web page while providing useful
-information to click through about my work and myself. It was also a good learning process
-where I could utalize the skills ive learned thus far to put together a functional website.
+While learning web development it is important to understand and utalize javascript.
+This project allowed me to display my skills in javascript through the creation of a password generator.
 
 ## Table of Contents
 
@@ -18,22 +15,20 @@ where I could utalize the skills ive learned thus far to put together a function
 ## Installation
 
 To run this project, the user needs to open the index.html file in their web browser. It can also be
-accessed by utalizing github live pages from this link. https://rjo6615.github.io/Module-2-Challenge/
+accessed by utalizing github live pages from this link. https://rjo6615.github.io/Password-Generator/
 
 ## Usage
 
-To use this project, start with the navigation bar on the top of the page. Select an option and the site
-will move you to the selected section on the page. The resume option will direct you to a pdf of my resume.
-Under the work section, the five projects listed are all clickable and will direct you to the selected project.
-In the contact me section, The email link will open up your email application to send an email to my address. 
-The phone number link will open your phone app to call my phone number and the github link will direct you
-to my repository.
+To use this project, start by clicking the 'Generate Password' button. You will then be prompted
+to choose a password length. After the password length is entered, a series of prompts will ask whether or not
+you would like to add certain criteria. After the criteria selection, a password will be displayed below.
 
 Example images are listed below:
 
-![Nav bar](assets/images/example-image1.jpg)
-![Work section](assets/images/example-image2.jpg)
-![Email example](assets/images/example-image3.jpg)
+![Home Page](assets/images/example-image1.jpg)
+![Password length](assets/images/example-image2.jpg)
+![Criteria](assets/images/example-image3.jpg)
+![Displayed password](assets/images/example-image4.jpg)
 
 ## Credits
 
