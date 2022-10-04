@@ -25,10 +25,10 @@ you would like to add certain criteria. After the criteria selection, a password
 
 Example images are listed below:
 
-![Home Page](Assets/images/example-image1.jpg)
-![Password length](Assets/images/example-image2.jpg)
-![Criteria](Assets/images/example-image3.jpg)
-![Displayed password](Assets/images/example-image4.jpg)
+![Home Page](Assets/images/image1.jpg)
+![Password length](Assets/images/image2.jpg)
+![Criteria](Assets/images/image3.jpg)
+![Displayed password](Assets/images/image4.jpg)
 
 ## Credits
 
